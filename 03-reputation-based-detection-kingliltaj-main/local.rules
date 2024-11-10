@@ -1,0 +1,2 @@
+alert icmp any any -> any any (msg:"BAD IP REPUTATION: High Confidence Alert"; iprep:any,ISC,>,51; sid:1; rev:1;)
+alert icmp any any -> any any (msg:"BAD IP REPUTATION: Low Confidence Alert"; iprep:any,ISC,<,50; sid:2; rev:1;)
